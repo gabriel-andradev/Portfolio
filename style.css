@@ -1,0 +1,503 @@
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    text-decoration: none;
+}
+/** Corpo do site */
+body {
+    height: auto;
+    color: #ffffffc4;
+    transition: background 0.5s linear;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: 
+    "perfil perfil"
+    "main main"
+    "footer footer";
+    opacity: 1;
+    /*background-color: #171717;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #171717 8px ), repeating-linear-gradient( #02030555, #020305 );*/
+    background-image: url("./files/background/black-ground.png");
+}
+
+/** Parte superior do site */
+.cabecalho {
+    /*
+    background-color: #1b1e20;
+    border: 2px solid red;*/
+    width: auto;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e9e9e971;
+    height: 1.5rem;
+    grid-area: main;
+}
+
+/** Icones Linkein e GitHub */
+.redes {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+/** Animação nos icones */
+.redes a:hover {
+    transition: transform 0.3s;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/** Navegação do site */
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 6rem;
+    margin-right: 8rem;
+}
+
+nav a {
+    color: #ffffffc4;
+    text-decoration: none;
+}
+
+
+li:hover {
+    transition: transform 0.3s;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: drop-shadow(2px 2px 10px rgba(12, 185, 185, 0.1))
+    drop-shadow(-2px -2px 10px rgba(12, 185, 185, 0.1))
+}
+
+/** Foto de perfil e nome */
+.titulo {
+    margin-top: 20px;
+    width: 200px;
+}
+
+.perfil {
+    display: inline-flex;
+    background-color: linear-gradient(236.85deg, #041832 27.26%, #191c20 96.03%);
+    height: 100px;
+    grid-area: perfil;
+}
+
+.perfil-foto {
+    padding: 16px 16px;
+    border-radius: 460px;
+}
+
+.perfil-foto:hover {
+    transition: transform 0.3s;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.perfil h2 {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.perfil h3 {
+    word-break: break-all;
+    /*color: rgba(12, 185, 185, 0.8);*/
+    background: linear-gradient(to right, #5D8973 0%, #0d3a47 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*.tema button {
+    font-family: "Roboto" sans-serif;
+    padding: 6px 10px;
+    position: fixed;
+    background: #5c91db;
+    border: 1px 1px #0e1d2f;
+    font-size: 1rem;
+    border-radius: 160px;
+    right: 15px;
+    top: 15px;
+}*/
+
+/** Margem no corpo */
+main {
+    margin: 13rem 3rem;
+}
+
+.gif {
+    width: 750px;
+    top: 100px;
+    right: 60%;
+    left: 40%;
+    filter: opacity(40%);
+}
+
+.ola {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.nome {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.front {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: transparent;
+    font-size: 50px;
+    letter-spacing: 0.07rem;
+    /*-webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 233, 233);*/
+    /* border-bottom: 1px solid rgba(0, 255, 255, 0.5); */
+    background: linear-gradient(to right, #5D8973 0%, #0d3a47 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/** Projetos e Exp */
+#exp {
+    margin-top: 25rem;
+}
+
+.conteudo {
+    margin: 240px 2rem;
+}
+
+section img {
+    width: 100%;
+}
+
+.langs {
+    width: max-content;
+    margin-left: 15%;
+}
+
+.langs img {
+    margin-top: 3rem;
+    width: auto;
+    height: 300px;
+    transition: all 0.2s;
+}
+
+/*.langs img:hover{
+    /*border: 10px solid #136497;
+    filter: drop-shadow(5px 5px 5px rgb(12, 185, 185))
+    drop-shadow(-5px -5px 5px rgb(12, 185, 185));
+}*/
+
+.langs .html:hover{
+    /*border: 10px solid #136497;*/
+    filter: drop-shadow(5px 5px 5px rgb(185, 81, 12))
+    drop-shadow(-5px -5px 5px rgb(185, 81, 12));
+}
+
+.langs .css:hover{
+    /*border: 10px solid #136497;*/
+    filter: drop-shadow(5px 5px 5px rgb(12, 121, 185))
+    drop-shadow(-5px -5px 5px rgb(12, 121, 185));
+}
+
+.langs .js:hover{
+    /*border: 10px solid #136497;*/
+    filter: drop-shadow(5px 5px 5px rgb(185, 145, 12))
+    drop-shadow(-5px -5px 5px rgb(185, 145, 12));
+}
+
+.projetos {
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*border-bottom: 1px solid #f0f0f0be;*/
+}
+
+.projetos h2 {
+    font-size: 2rem;
+    margin-top: 4.5rem;
+    background: linear-gradient(to right, #5D8973 0%, #0d3a47 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projetos p {
+    margin-top: 0.5rem;
+    margin-left: 0.1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+#project {
+    margin-top: 9.2rem;
+}
+
+.linguagens {
+    margin: 0 2rem;
+    font-weight: 700;
+}
+
+/*.title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 15rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}*/
+
+/** Introducao do sobre-mim */
+.subtitle {
+    color: #336060;
+}
+
+
+#sobre {
+    width: 100%;
+    display: inline-flex;
+    line-height: 1.5;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+#sobre img {
+    height: 280px;
+    margin-right: 1rem;
+    border-radius: 460px;
+}
+
+#sobre-mim {
+    display: inline-flex;
+    text-align: left;
+    width: 700px;
+    margin-right: 100px;
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
+}
+
+#sobre-mim strong {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/** linha de separaçao */
+.linha {
+    border-bottom: 1px solid #e9e9e971;
+}
+
+/** Imagens de contato inferior */
+.img-contato {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.img-contato a:hover {
+    transition: transform 0.3s;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+#contato p {
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(12, 185, 185);
+    text-align: center;
+    /*margin-bottom: 2rem;*/
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
+#contato .foot {
+    font-weight: 400;
+    color: white;
+    /*margin-top: 2rem;*/
+    margin-bottom: 2rem;
+    font-size: 16px;
+}
+
+#contato .email {
+    color:#336060 ;
+}
+
+#contato p {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+/** Rodape do site */
+footer {
+    grid-area: footer;
+}
+
+footer p a {
+    color: #336060;
+}
+
+footer .tel {
+    filter: blur(3px);
+    color: #336060;
+}
+
+footer .tel:hover {
+    filter: blur(0);
+}
+
+/** Tema Light */
+body.light {
+    background: linear-gradient(236.85deg, #ffffff8f 27.26%, #a7a7a79c 96.03%);
+    color: #336060;
+    transition: background 0.5s linear;
+    /*background-color: #ffffff;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f2f2f2 8px ), repeating-linear-gradient( #cdcdcd55, #d9d9d9 );
+    background-color: #FFFFFF;*/
+    background-image: url("./files/background/white-ground.png");
+}
+
+body.light h3 {
+    color: #336060;
+}
+
+body.light .projetos h2 {
+    color: #336060;
+    text-shadow: 1px 1px 50px #0113139d;
+}
+
+.light .ola,
+.light .nome,
+.light nav a,
+.light .projetos h2
+.light .linguagens {
+   color:#336060;
+   text-shadow: 1px 1px 50px #0113139d;
+}
+
+.light .front {
+    /*-webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #1e4444;
+    border-bottom: 1px solid #193030;
+    color: #336060;*/
+    background: linear-gradient(to right, #5D8973 0%, #0d3a47 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.light .projetos p {
+    color:#193030
+}
+
+.light .cabecalho,
+.light .linha {
+    border-bottom: 1px solid #171717;
+}
+
+.light .redes img,
+.light .img-contato img {
+    filter: invert(90%);
+}
+
+.light #contato p {
+    color: #004d4d;
+}
+
+.light #contato .foot {
+    color: rgba(17, 17, 17, 0.863);
+}
+
+.light hr {
+    border: 1px solid #193030 ;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+/** light e dark mode funcao */
+.label {
+    background-color: #e0e0e0;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 5px;
+    position: fixed;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+    box-sizing: border-box;
+}
+
+.light .label {
+    background-color: #000000ec;
+}
+
+.light .label .ball {
+    background-color: white;
+}
+
+.light footer p a {
+    color: #004d4d
+}
+
+.label .ball {
+    background-color: #111111;
+    border-radius: 50%;
+    position: fixed;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40fd7;
+}
+  
+.fa-sun {
+    color: #ff9d00;
+}
+
